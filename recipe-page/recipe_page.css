@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Outfit');
+
+*, *::after { box-sizing: border-box; }
+
+* { margin: 0;
+	padding: 0;
+	font: inherit;
+	font-family: Outfit;
+}
+
+body {
+	min-height: 100vh;
+	background-color: hsl(30, 54%, 90%);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	padding-bottom: 30px;
+	border-radius: 20px;
+}
+
+h1 {
+	font-size: 30px;
+	font-family: Young Serif;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: Young Serif;
+	color: hsl(14, 45%, 36%);
+}
+
+h3 {
+	color: hsl(332, 51%, 32%);
+	font-weight: 600;
+}
+
+p { line-height: 25px }
+
+ol, ul {
+	padding: 0px 20px;
+}
+
+li {
+	list-style-position: inside;
+	line-height: 25px;
+}
+
+strong { font-weight: 600; }
+
+article { margin-bottom: 40px; }
+
+article * { padding-bottom: 10px }
+
+table { margin-left: 100px; }
+
+tr * { padding-bottom: 15px; }
+
+td { padding-right: 200px; }
+
+
+
+.container {
+	width: 800px;
+	height: 1750px;
+	background-color: hsl(0, 0%, 100%);
+	margin: 50px auto;
+	padding: 40px;
+	border-radius: 20px;
+}
+
+.rosy-box {
+	width: 650px;
+	height: 200px;
+	margin: 20px 0px 40px;
+	padding: 25px;
+	background-color: hsl(330, 100%, 98%);
+	border-radius: 20px;
+}
+
+.rosy-box * { padding-bottom: 20px; }

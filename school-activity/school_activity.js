@@ -1,5 +1,5 @@
 d3.csv('/school-activity/Chapter3Data.csv', (dataset) => {
-	console.log(dataset[0][13])
+	console.log(dataset[0].OrderQty)
 })
 
 /*

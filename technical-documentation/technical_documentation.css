@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: Manrope;
+}
+
+header {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+a {
+  display: block;
+  font-size: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+li {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+span {
+  display: block;
+}
+
+code {
+  display: block;
+  width: 500px;
+  padding: 15px 15px 15px 30px;
+  border-radius: 5px;
+  background-color: #3c3c3c;
+  color: #d9d9d9;
+  line-height: 25px;
+}
+
+#navbar {
+  width: 300px;
+  position: fixed;
+  height: 100%;
+  padding: 40px 10px 0;
+  text-align: center;
+  background-color: #3c3c3c;
+  color: #d9d9d9;
+}
+
+#navbar * {
+  margin-bottom: 20px;
+}
+
+#main-doc {
+  width: 600px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-bottom: 50px;
+}
+
+.main-section {
+  padding-top: 50px;
+}
+
+.big-text {
+  font-size: 30px;
+}
+
+.nested {
+  padding-left: 20px;
+}
+
+.nested-2 {
+  padding-left: 40px;
+}
+
+.some-padding-bottom {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  #main-doc {
+    margin: 0 0 0 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    margin: 0 !important;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #main-doc {
+    padding-left: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  code {
+    width: 280px;
+  }
+
+  .main-section {
+    width: 350px;
+  }
+
+  #main-doc {
+    padding-left: 20px;
+  }
+}

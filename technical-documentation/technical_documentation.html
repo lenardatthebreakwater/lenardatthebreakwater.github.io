@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="technical_documentation.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="big-text some-padding-bottom">Python</header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#Hello_World" class="nav-link">Hello World</a>
+      <a href="#Variables" class="nav-link">Variables</a>
+      <a href="#Conditional_Statements" class="nav-link">Conditional Statements</a>
+      <a href="#Loops"class="nav-link">Loops</a>
+      <a href="#Classes_and_Objects" class="nav-link">Classes and Objects</a>
+      <a href="#Built-in_Functions" class="nav-link">Built-in Functions</a>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header class="big-text">Introduction</header>
+        <p>Python is a general purpose object oriented programming language</p>
+        <p>It was created by Guido van Rossum and was first released on February 20, 1991</p>
+        <p>Python can be used in:</p>
+        <ul>
+          <li class="nested">Game Development</li>
+          <li class="nested">Web Development</li>
+          <li class="nested">Data Science</li>
+          <li class="nested">Machine Learning</li>
+          <li class="nested">Automation</li>
+        </ul>
+      </section>
+      <section id="Hello_World" class="main-section">
+        <header>Hello World</header>
+        <p>Your first python program</p>
+        <code>print ("Hello, world")</code>
+      </section>
+      <section id="Variables" class="main-section">
+        <header>Variables</header>
+        <code>
+          <span>name = "John"</span>
+          <span>age = 20</span>
+          <span>isHandsome = True</span>
+        </code>
+      </section>
+      <section id="Conditional_Statements" class="main-section">
+        <header>Conditional Statements</header>
+        <p>if-else:</p>
+        <code>
+          <span>age = 19</span>
+          <span>if age >= 18:</span>
+          <span class="nested">print("You're a young adult now")</span>
+          <span>else:</span>
+          <span class="nested">print("Enjoy your youth")</span>
+        </code>
+        <p>match-case:</p>
+        <code>
+          <span>color = "red"</span>
+          <span>match color:</span>
+          <span class="nested">case "green":</span>
+          <span class="nested-2">print("The color is green")</span>
+          <span class="nested">case "red":</span>
+          <span class="nested-2">print("The color is red")</span>
+        </code>
+      </section>
+      <section id="Loops" class="main-section">
+        <header>Loops</header>
+        <p>for loop</p>
+        <code>
+          <span>for i in range(5)</span>
+          <span class="nested">print(i)</span>
+        </code>
+        <p>while loop</p>
+        <code>
+          <span>i = 0</span>
+          <span>while i < 5:</span>
+          <span class="nested">print(i)</span>
+          <span class="nested">i+=1</span>
+        </code>
+      </section>
+      <section id="Classes_and_Objects" class="main-section">
+        <header>Classes and Objects</header>
+        <code>
+          <span>Class Person:</span>
+          <span class="nested">def __init__(self, name, age):</span>
+          <span class="nested-2">self.name = name</span>
+          <span class="nested-2">self.age = age</span>
+          <span class="nested">def introduce_self(self):</span>
+          <span class="nested-2">print(f"Hello, my name is {self.name}")</span><br>
+          <span>me = Person("John", 20)</span>
+          <span>me.introduce_self</span>
+        </code>
+      </section>
+      <section id="Built-in_Functions" class="main-section">
+        <header>Built-in Functions</header>
+        <p>len()</p>
+        <code>
+          <span>name="John"</span>
+          <span>print(len(name))</span>
+        </code>
+        <p>range()</p>
+        <code>
+          <span>for i in range(5):</span>
+          <span class="nested">print(f"Hello {i}")</span>
+        </code>
+        <p>type()</p>
+        <code>
+          <span>age = 19</span>
+          <span>print(type(age))</span>
+        </code>
+      </section>
+    </main>
+  </body>
+</html>

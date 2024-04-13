@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dragon Ball Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="survey_form.css">
+</head>
+<body>
+	<main>
+		<div id="header">
+			<h1 id="title" class="big-text">Dragon Ball Survey Form</h1>
+			<p id="description">Thank you for taking your time to fill out this form</p>
+		</div>
+
+		<form id="survey-form">
+			<div class="field">
+				<label id="name-label" for="name">Name</label>
+				<input type="text" id="name" placeholder="Enter your name" class="text-input" required>
+			</div>
+
+			<div class="field">
+				<label id="email-label" for="email">Email</label>
+				<input type="email" id="email" placeholder="Enter your email" class="text-input" required>
+			</div>
+
+			<div class="field">
+				<label id="number-label" for="number">Age(<small>optional</small>)</label>
+				<input  type="number" id="number" min="6" max="120" placeholder="Your age" class="text-input" required>
+			</div>
+
+			<div class="field">
+				<p>Select your gender</p>
+				<select id="dropdown" placeholder="Your gender" class="text-input" required>
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+			</div>
+
+			<div class="field">
+				<p>What is your most favorite series of the franchise?</p>
+				<input type="radio" name="series" value="Dragon Ball" class="mt-20"><label class="ml-10">Dragon Ball</label><br>
+				<input type="radio" name="series" value="Dragon Ball Z" class="mt-20"><label class="ml-10">Dragon Ball Z</label><br>
+				<input type="radio" name="series" value="Dragon Ball GT" class="mt-20"><label class="ml-10">Dragon Ball GT</label><br>
+				<input type="radio" name="series" value="Dragon Ball Super" class="mt-20"><label class="ml-10">Dragon Ball Super</label><br>
+			</div>
+
+			<div class="field">
+				<p>What Dragon Ball movies are your favorite?</p>
+				<input type="checkbox" value="Dragon Ball: Curse of the Blood Rubies" class="mt-20"><label class="ml-10">Dragon Ball: Curse of the Blood Rubies</label><br>
+				<input type="checkbox" value="Dragon Ball: Sleeping Princess in Devil's Castle" class="mt-20"><label class="ml-10">Dragon Ball: Sleeping Princess in Devil's Castle</label><br>
+				<input type="checkbox" value="Dragon Ball Z: Dead Zone" class="mt-20"><label class="ml-10">Dragon Ball Z: Dead Zone</label><br>
+				<input type="checkbox" value="Dragon Ball Z: The World's Strongest" class="mt-20"><label class="ml-10">Dragon Ball Z: The World's Strongest</label><br>
+				<input type="checkbox" value="Dragon Ball Super: Super Hero" class="mt-20"><label class="ml-10">Dragon Ball Super: Super Hero</label><br>
+			</div>
+
+			<div id="footer">
+				<p>Do you have any comments?</p>
+				<textarea  placeholder="Comment here..."></textarea>
+				<button type="submit" id="submit">Submit</button>
+			</div>
+		</form>
+	</main>
+</body>
+</html>

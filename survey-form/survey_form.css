@@ -43,8 +43,7 @@ button {
 }
 
 button:hover {
-	background-color: gold;
-	color: blue;
+	background-color: blue;
 }
 
 #header {
@@ -86,6 +85,10 @@ button:hover {
 
 .ml-10 {
 	margin-left: 10px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
 }
 
 @media (max-width:500px) {
